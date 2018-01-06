@@ -2,7 +2,7 @@ server:
   port: 8000
 spring:
   application:
-    name: microservice-provider-user-druid    # 项目名称尽量用小写
+    name: cloud-provider-user-druid    # 项目名称尽量用小写
   jpa:
     generate-ddl: false
     show-sql: true
