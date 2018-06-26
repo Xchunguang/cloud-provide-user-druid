@@ -7,12 +7,12 @@ spring:
     generate-ddl: false
     show-sql: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
   datasource:                           # 指定数据源
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=true
-    username: root
-    password: root
+    url: jdbc:mysql://10.6.215.42:3306/excel?useUnicode=true&characterEncoding=utf8&useSSL=true
+    username: xcg
+    password: 132566
     initialSize: 5
     minIdle: 5
     maxActive: 20	
@@ -30,7 +30,5 @@ logging:
     com.itmuch.youran.persistence: ERROR
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://discovery:8761/eureka/    # 指定注册中心的地址
-  instance:
-    preferIpAddress: true
+    registerWithEureka: false
+    fetchRegistry: false
