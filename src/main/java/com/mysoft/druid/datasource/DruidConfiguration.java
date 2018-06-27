@@ -16,7 +16,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 public class DruidConfiguration{
 
     @Bean
-    @ConfigurationProperties("spring.datasource.*")
+//    @ConfigurationProperties("spring.datasource.*")
     public DruidDataSource dataSource(DataSourceProperties properties) {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName(properties.determineDriverClassName());
